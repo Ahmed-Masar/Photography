@@ -1,6 +1,6 @@
 .blog {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./assets/blog.jpg");
+    url("/assets/blog.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
