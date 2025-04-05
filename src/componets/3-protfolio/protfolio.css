@@ -1,0 +1,61 @@
+.prot__grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.prot__card {
+  isolation: isolate;
+  position: relative;
+}
+
+.prot__card::after {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+.prot__card:nth-child(1):after {
+  content: "Portraits";
+}
+.prot__card:nth-child(2):after {
+  content: "Weddings";
+}
+.prot__card:nth-child(3):after {
+  content: "Fashions";
+}
+
+.prot__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.prot__card:hover .prot__content {
+  opacity: 1;
+}
+
+@media (width > 540px) {
+  .prot__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 768px) {
+  .prot__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

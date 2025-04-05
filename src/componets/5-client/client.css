@@ -1,0 +1,38 @@
+.client__container {
+  padding-bottom: 2rem;
+}
+.swiper {
+  margin-top: 2rem;
+  padding-bottom: 3rem !important;
+  width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--text-dark) !important;
+}
+
+.client__card {
+  text-align: center;
+  margin-inline: auto;
+  max-width: 900px;
+}
+
+.client__card img {
+  max-width: 120px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.client__card p {
+  color: var(--text-light);
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.client__card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}

@@ -1,0 +1,10 @@
+.about__container .section__subHeader {
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  max-width: 900px;
+}
+
+.about__container img {
+  max-width: 170px;
+  margin-inline: auto;
+}
